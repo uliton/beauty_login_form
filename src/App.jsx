@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router";
+import { LoginForm } from "./components/LoginForm/LoginForm";
 
-export const App: React.FC = () => (
+export const App = () => (
   <div className="app">
     <Routes>
-      <Route path="/" element={} />
-      <Route path="*" element={} />
+      <Route path="*" element={<LoginForm />} />
     </Routes>
   </div>
 );
